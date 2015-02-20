@@ -1,0 +1,20 @@
+
+    npm start
+
+Then run the tests with
+
+    npm test
+
+step 1
+open terminal
+webdriver-manager  start
+
+step 2
+
+cd test-pro-cu/protractor/
+    npm start
+
+step 3
+Then run the tests with
+
+    npm test

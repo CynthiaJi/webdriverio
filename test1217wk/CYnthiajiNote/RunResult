@@ -1,0 +1,85 @@
+
+Run @ 2015 Feb 11
+online@OnlineTax-L1:~/test-pro-cu/protractor$ npm test
+
+> protractor@1.5.0 pretest /home/online/test-pro-cu/protractor
+> jshint lib spec scripts
+
+
+> protractor@1.5.0 test /home/online/test-pro-cu/protractor
+> scripts/test.js
+
+running: node lib/cli.js spec/basicConf.js
+>>> pass
+running: node lib/cli.js spec/multiConf.js
+>>> pass
+running: node lib/cli.js spec/altRootConf.js
+>>> pass
+running: node lib/cli.js spec/onCleanUpAsyncReturnValueConf.js
+>>> pass
+running: node lib/cli.js spec/onCleanUpNoReturnValueConf.js
+>>> pass
+running: node lib/cli.js spec/onCleanUpSyncReturnValueConf.js
+>>> pass
+running: node lib/cli.js spec/onPrepareConf.js
+>>> pass
+running: node lib/cli.js spec/onPrepareFileConf.js
+>>> pass
+running: node lib/cli.js spec/onPreparePromiseConf.js
+>>> pass
+running: node lib/cli.js spec/onPreparePromiseFileConf.js
+>>> pass
+running: node lib/cli.js spec/mochaConf.js
+>>> pass
+running: node lib/cli.js spec/cucumberConf.js
+>>> pass
+running: node lib/cli.js spec/withLoginConf.js
+>>> pass
+running: node lib/cli.js spec/suitesConf.js --suite okmany
+>>> pass
+running: node lib/cli.js spec/suitesConf.js --suite okspec
+>>> pass
+running: node lib/cli.js spec/suitesConf.js --suite okmany,okspec
+>>> pass
+running: node lib/cli.js spec/pluginsBasicConf.js
+>>> pass
+running: node lib/cli.js spec/pluginsFullConf.js
+>>> pass
+running: node lib/cli.js spec/ngHintSuccessConfig.js
+>>> pass
+running: node lib/cli.js spec/interactionConf.js
+>>> pass
+running: node lib/cli.js spec/directConnectConf.js
+Using ChromeDriver directly...
+[launcher] Running 1 instances of WebDriver
+[launcher] Error: Error: Could not find chromedriver at /home/online/test-pro-cu/protractor/selenium/chromedriver.exe
+    at DirectDriverProvider.getNewDriver (/home/online/test-pro-cu/protractor/lib/driverProviders/direct.js:62:17)
+    at Runner.createBrowser (/home/online/test-pro-cu/protractor/lib/runner.js:178:37)
+    at /home/online/test-pro-cu/protractor/lib/runner.js:259:24
+    at _fulfilled (/home/online/test-pro-cu/protractor/node_modules/q/q.js:797:54)
+    at self.promiseDispatch.done (/home/online/test-pro-cu/protractor/node_modules/q/q.js:826:30)
+    at Promise.promise.promiseDispatch (/home/online/test-pro-cu/protractor/node_modules/q/q.js:759:13)
+    at /home/online/test-pro-cu/protractor/node_modules/q/q.js:525:49
+    at flush (/home/online/test-pro-cu/protractor/node_modules/q/q.js:108:17)
+    at process._tickCallback (node.js:419:13)
+    at Function.Module.runMain (module.js:499:11)
+[launcher] Process exited with error code 100
+>>> fail: Error: expecting exit code: 0, actual: 100
+running: node node_modules/.bin/minijasminenode spec/unit/config_test.js spec/unit/runner_test.js spec/unit/taskScheduler_test.js
+>>> pass
+running: node lib/cli.js spec/errorTest/singleFailureConf.js
+>>> pass
+running: node lib/cli.js spec/errorTest/timeoutConf.js
+>>> pass
+running: node lib/cli.js spec/errorTest/afterLaunchChangesExitCodeConf.js
+>>> pass
+running: node lib/cli.js spec/errorTest/multiFailureConf.js
+>>> pass
+running: node lib/cli.js spec/errorTest/shardedFailureConf.js
+>>> pass
+running: node lib/cli.js spec/errorTest/mochaFailureConf.js
+>>> pass
+running: node lib/cli.js spec/ngHintFailConfig.js
+>>> pass
+Summary: fail
+npm ERR! Test failed.  See above for more details.

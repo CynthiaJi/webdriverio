@@ -1,0 +1,4 @@
+node lib/cli.js spec/basicConf.js
+node lib/cli.js spec/cjConf.js
+
+protractor protest/confcj.js

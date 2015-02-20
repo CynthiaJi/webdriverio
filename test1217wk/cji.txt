@@ -1,0 +1,14 @@
+cd test-pro-cu/test1217
+webdriver-manager start
+
+
+
+cd test-pro-cu/test1217
+protractor protest/confcj.js
+
+
+
+
+node lib/cli.js spec/cucumberConf.js
+
+cp   home/online/test-pro-cu/test1217

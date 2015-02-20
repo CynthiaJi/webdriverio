@@ -1,0 +1,99 @@
+2 passing (26s)
+  2 failing
+
+  1) TaxOnlineTest Client:
+     Uncaught RuntimeError
+     (UnknownError:13) An unknown server-side error occurred while processing the command.
+
+     Callstack:
+     -> elementIdClick("icon-task-centre")
+
+
+
+  2) TaxOnlineTest Tax:
+     Uncaught RuntimeError
+     (InvalidSelector:32) Argument was an invalid selector (e.g. XPath/CSS).
+     Problem: invalid selector: An invalid or illegal selector was specified
+
+     Callstack:
+     -> element("link=Add New Form")
+     -> click("link=Add New Form")
+
+
+
+
+
+online@OnlineTax-L1:~/webdriverio-test/AD-OnlineTax-AU-FBT-2015$ mocha --slow 15000 --timeout 30000 --recursive spec/ui/loginpg6.cjspec.js
+
+/home/online/webdriverio-test/AD-OnlineTax-AU-FBT-2015/spec/ui/loginpg6.cjspec.js:181
+      .call(done);
+                 ^
+SyntaxError: Unexpected token ;
+    at Module._compile (module.js:439:25)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at /usr/lib/node_modules/mocha/lib/mocha.js:185:27
+    at Array.forEach (native)
+    at Mocha.loadFiles (/usr/lib/node_modules/mocha/lib/mocha.js:182:14)
+    at Mocha.run (/usr/lib/node_modules/mocha/lib/mocha.js:394:31)
+    at Object.<anonymous> (/usr/lib/node_modules/mocha/bin/_mocha:394:16)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:906:3
+online@OnlineTax-L1:~/webdriverio-test/AD-OnlineTax-AU-FBT-2015$
+##########
+ 2 failing
+
+  1) TaxOnlineTest Client:
+     Uncaught RuntimeError
+     (UnknownError:13) An unknown server-side error occurred while processing the command.
+     Problem: unknown error: Element is not clickable at point (31, 363). Other element would receive the click: <div class="loading-icon">...</div>
+
+     Callstack:
+     -> elementIdClick("4")
+     -> click("i[class=icon-task-centre]")
+
+
+
+  2) TaxOnlineTest Tax:
+     Uncaught RuntimeError
+     (NoSuchElement:7) An element could not be located on the page using the given search parameters.
+     Problem: no such element
+
+     Callstack:
+     -> element("#Add New Form")
+     -> submitForm("#Add New Form")
+
+
+     .submitForm('#Add New Form')  - this does not work
+      .click('link=Add New Form')  - this does not work
+     #################################
+      2 failing
+
+       1) TaxOnlineTest Client:
+          Uncaught RuntimeError
+          (UnknownError:13) An unknown server-side error occurred while processing the command.
+          Problem: unknown error: Element is not clickable at point (31, 363). Other element would receive the click: <div class="loading-icon">...</div>
+
+          Callstack:
+          -> elementIdClick("4")
+          -> click("i[class=icon-task-centre]")
+
+
+
+       2) TaxOnlineTest Tax:
+          Uncaught RuntimeError
+          (InvalidSelector:32) Argument was an invalid selector (e.g. XPath/CSS).
+          Problem: invalid selector: An invalid or illegal selector was specified
+
+          Callstack:
+          -> element("link=Add New Form")
+          -> click("link=Add New Form")
+

@@ -1,0 +1,13 @@
+online@OnlineTax-L1:~/mochatest/mypage0310/mypage0310/spec$ protractor conf.js
+Using the selenium server at http://localhost:4444/wd/hub
+[launcher] Running 1 instances of WebDriver
+Global IT Consulting, Solution, and Outsourcing Services from Pactera
+.test automation | Search Results | Pactera
+.
+
+Finished in 18.78 seconds
+2 tests, 2 assertions, 0 failures
+
+[launcher] 0 instance(s) of WebDriver still running
+[launcher] firefox #1 passed
+online@OnlineTax-L1:~/mochatest/mypage0310/mypage0310/spec$

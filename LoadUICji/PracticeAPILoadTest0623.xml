@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:loadui-project label="PracticeAPILoadTest0623" id="9441f69b-9af5-416d-89af-7bb5052df8c9" xmlns:con="http://eviware.com/loadui/config"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="ModelItem.saveReport" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="ModelItem.reportFolder" type="java.lang.String"/><con:property propagates="true" key="ModelItem.reportFormat" type="java.lang.String"/></con:properties><con:attributes/><con:addons><con:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="45b6b608-68ff-4258-96c8-5403a6f99a46"><con:attributes><con:property key="parentId">21e30479-c1dc-44fb-bab4-24dde6119d66</con:property><con:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkMjFlMzA0NzktYzFkYy00NGZiLWJhYjQtMjRkZGU2MTE5ZDY2dAAEbWFpbnQAA01BWHQAG1JlcXVlc3RDcmVhdGU6IFJlc3BvbnNlU2l6ZQ==</con:property><con:property key="Labeled@label">Assertion 1</con:property><con:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cECCwAAAAAAAAAAAAAAAAAA=</con:property><con:property key="tolerancePeriod">-1</con:property><con:property key="toleranceAllowedOccurrences">0</con:property></con:attributes><con:addons/></con:addon></con:addons><con:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="PracticeAPI" id="3db49cdd-154e-49fc-9452-7aa04f2c07c6"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="concurrentSamples" type="java.lang.Long">100</con:property><con:property propagates="true" key="maxQueueSize" type="java.lang.Long">1000</con:property><con:property propagates="true" key="countDiscarded" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="_projectFileworkingCopy" type="java.io.File">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0620-soapui-project.xml</con:property><con:property propagates="true" key="disabledTestSteps" type="java.lang.String">RequestDelete=true,DataSource Loop=false,Requestupdate=true</con:property><con:property propagates="true" key="settingsFile" type="java.io.File">C:\Users\Dev.Admin\soapui-settings.xml</con:property><con:property propagates="true" key="_projectPassword" type="java.lang.String" xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:property propagates="true" key="useProjectRelativePath" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="raiseError" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="outputTestCaseProperties" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="OutputLevel" type="java.lang.String">TestCase only</con:property><con:property propagates="true" key="closeConnectionsAfterRequest" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="disableSoapuiAssertions" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="forceShareDatasources" type="java.lang.Boolean">true</con:property><con:property propagates="false" key="projectFile" type="java.lang.String">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0620-soapui-project.xml</con:property><con:property propagates="true" key="testSuite" type="java.lang.String">PracticeAPITestSuite</con:property><con:property propagates="true" key="testCase" type="java.lang.String">Practice TestCase</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">SoapUI Runner</con:property><con:property key="gui.layoutX">220</con:property><con:property key="gui.layoutY">312</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Delay 1" id="e7c974cd-a22e-4922-a786-eb62d75c7c2a" category="flow"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">// 
+// Copyright 2013 SmartBear Software
+// 
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+// 
+// http://ec.europa.eu/idabc/eupl
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+// 
+
+/**
+ * Delays incoming messages for a period of time
+ * 
+ * @id com.eviware.Delay
+ * @help http://www.loadui.org/Flow-Control/delay-component.html
+ * @category flow
+ * @nonBlocking true
+ */
+ 
+import com.eviware.loadui.api.events.PropertyEvent
+import java.util.concurrent.atomic.AtomicLong
+import java.util.concurrent.TimeUnit
+import com.eviware.loadui.api.model.SceneItem
+
+final GAUSSIAN = 'Gaussian'
+final UNIFORM = 'Uniform'
+final EXPONENTIAL = 'Exponential'
+
+def random = new Random()
+def waitingCount = new AtomicLong()
+
+def displayNA = false
+long waitTime = 0
+
+createOutgoing( 'output' )
+output.label = 'Delayed messages'
+output.description = 'After being delayed, messages are outputted here.'
+
+incomingTerminal.label = 'Messages to delay'
+incomingTerminal.description = 'Recieved messages will be delayed before being outputted. Messages are processed independently in parallel (as opposed to being queued).'
+
+createProperty('delay', Long, 0)
+createProperty('selected', String, UNIFORM)
+createProperty('randomDelay', Integer, 0)
+
+total( 'waitingTotal' ) { waitingCount.get() }
+
+def workspace = null
+if(controller) {
+	workspace = canvas.project?.workspace
+}
+	
+fixDisplay = { displayNA = canvas instanceof SceneItem &amp;&amp; !workspace?.localMode }
+
+def workspaceListener = null
+if( workspace != null ) {
+	workspaceListener = addEventListener( workspace, PropertyEvent ) { event ->
+		fixDisplay()
+	}
+}
+fixDisplay()
+ 
+onMessage = { outgoing, incoming, message ->
+	if( incoming == incomingTerminal ) {
+		waitingCount.incrementAndGet()
+		def delayTime = delay.value 
+		if( selected.value == GAUSSIAN ) {
+			delayTime += ( random.nextGaussian() * ( randomDelay.value / 100 ) * delayTime * 0.3)
+		} else if( selected.value == UNIFORM ) {
+			delayTime += 2*( random.nextDouble() - 0.5 ) * delayTime * ( randomDelay.value / 100 )
+		} else if( selected.value == EXPONENTIAL ) {
+			delayTime *= -Math.log( 1 - random.nextDouble() )
+		}
+		
+		waitTime = delayTime as Long
+		message.put( 'actualDelay', waitTime )
+		schedule( {
+			send( output, message )
+			waitingCount.decrementAndGet()
+		}, waitTime, TimeUnit.MILLISECONDS )
+	}
+}
+ 
+onRelease = {
+	workspace?.removeEventListener( PropertyEvent, workspaceListener )
+}
+
+onAction( "COMPLETE" ) {
+	cancelTasks()
+	waitingCount.set( 0 )
+}
+
+onAction( "RESET" ) {
+	waitTime = 0
+	waitingCount.set( 0 )
+	cancelTasks()
+}
+
+layout { 
+	property( property:delay, label:"Delay\n(ms)", min:0, step:100, span:60000 ) 
+	separator( vertical:true )
+	node( widget:'selectorWidget', label:'Distribution', labels:[ UNIFORM, EXPONENTIAL, GAUSSIAN ],
+		images:[ 'linear_shape.png', 'poisson_shape.png', 'gauss_shape.png' ], selected: selected )
+	property( property: randomDelay, label:'Random\n(%)', min:0, max: 100 )
+	separator( vertical:true )
+	box( widget:'display' ) {
+		node( label:'Delay ', content: { displayNA ? 'n/a' : "$waitTime ms" }, constraints:'w 60!' )
+		node( label:'Waiting ', content: waitingTotal, constraints:'w 50!' )
+	}
+}
+ 
+compactLayout {
+	box( widget:'display' ) {
+		node( label:'Delay ', content: { displayNA ? 'n/a' : "$waitTime ms" }, constraints:'w 60!' )
+		node( label:'Waiting ', content: waitingTotal, constraints:'w 50!' )
+	}
+}</con:property><con:property propagates="true" key="delay" type="java.lang.Long">300</con:property><con:property propagates="true" key="selected" type="java.lang.String">Uniform</con:property><con:property propagates="true" key="randomDelay" type="java.lang.Integer">0</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Delay</con:property><con:property key="_digest">0f71bd03a38943c71f7cbffb4389518b</con:property><con:property key="_id">com.eviware.Delay</con:property><con:property key="_classLoader">com.eviware.Delay</con:property><con:property key="gui.layoutX">888</con:property><con:property key="gui.layoutY">488</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="DataSource 1" id="529ae8f4-aa73-455c-8d8d-f114bf3759c5" category="flow"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">/**
+ * Attaches values from a CSV-file to incoming Virtual Users. These values can
+ * then be used by subsequent components, such as a SoapUI Runner.
+ *
+ * @id com.eviware.DataSource
+ * @category flow
+ * @dependency com.xlson.groovycsv:groovycsv:1.0
+ */
+ 
+import com.xlson.groovycsv.CsvParser
+import java.util.ArrayList
+import com.google.common.collect.Lists
+
+
+
+createOutgoing( 'output' ) // Creates an outgoing connector called "output".
+csvIterator = null
+
+def inputFileText;
+
+def dataList;
+
+createProperty( 'separatorSymbol', String, ',' )
+
+parseCsv = {
+	if( inputFile.value )
+	{
+		dataList = Lists.newArrayList(CsvParser.parseCsv( inputFile.value.text, separator: separatorSymbol.value) as Iterator)
+		resetIterator()
+	}
+}
+
+resetIterator = {
+	csvIterator = dataList.iterator()
+}
+
+createProperty( 'inputFile', File ) {
+	parseCsv() // This will be called whenever the property's value is changed.
+}
+
+createProperty( 'shouldLoop', Boolean, false ) 
+
+// This is called whenever we get an incoming message.
+onMessage = { sendingConnector, receivingConnector, message ->
+
+	if(!csvIterator?.hasNext() &amp;&amp; shouldLoop.value)
+	{
+		resetIterator()
+	}
+		
+	if( csvIterator?.hasNext() )
+	{
+		line = csvIterator.next()
+		line.columns.each{ key, index ->
+			message[key] = line.values[index]
+		}
+	}
+
+	send( output, message )
+}
+
+onAction( 'RESET' ) {
+	parseCsv()
+}
+
+layout { 
+	property( property:inputFile, constraints: 'width 220', label:'Input file' )
+	property( property:shouldLoop, label:'Loop' )
+}
+
+settings (label: 'General') {
+	property( property: separatorSymbol, label:'Separator' )
+}
+
+parseCsv()
+</con:property><con:property propagates="true" key="separatorSymbol" type="java.lang.String">,</con:property><con:property propagates="true" key="inputFile" type="java.io.File">C:\Cynthia\soapUiSampleScripts\PracticeAPIData2.xls</con:property><con:property propagates="true" key="shouldLoop" type="java.lang.Boolean">true</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">DataSource</con:property><con:property key="_digest">ffdb8dfd167ff223a729ff338e6788c1</con:property><con:property key="_id">com.eviware.DataSource</con:property><con:property key="_classLoader">com.eviware.DataSource</con:property><con:property key="gui.layoutX">357</con:property><con:property key="gui.layoutY">123</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Fixed Rate 1" id="ece748dc-e912-4706-b5de-9e9e5269f5ea" category="generators"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">// 
+// Copyright 2013 SmartBear Software
+// 
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+// 
+// http://ec.europa.eu/idabc/eupl
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+// 
+
+/**
+ * Sends an empty message periodically, at a set rate
+ * 
+ * @id com.eviware.FixedRate
+ * @help http://www.loadui.org/Generators/fixed-rate-component.html
+ * @name Fixed Rate
+ * @category generators
+ * @nonBlocking true
+ */
+
+import java.util.concurrent.TimeUnit
+
+//Properties
+rate = createProperty( 'rate', Long, 10 ) { schedule() }
+unit = createProperty( 'unit', String, 'Sec' ) { schedule() }
+
+onReplace( stateProperty ) { value ->
+	if( value ) schedule()
+	else future?.cancel( true )
+}
+
+burstSize = createProperty( 'burstSize', Long, 1 )
+
+triggerBurst = { 
+	burstSize.value.times {
+		trigger() 
+	} 
+}
+
+future = null
+schedule = {
+	if( stateProperty.value ) {
+		long microsecondsPerUnit = unit.value == 'Sec' ? 1000000 : unit.value == 'Min' ? 60000000 : 3600000000
+		long delay = Math.max( 1, (long)(microsecondsPerUnit / rate.value) )
+		future?.cancel( true )
+		future = scheduleAtFixedRate( triggerBurst, delay, delay, TimeUnit.MICROSECONDS )
+	}
+}
+
+onAction( "START" ) { schedule() }
+onAction( "STOP" ) { future?.cancel( true ) }
+
+//Layout
+layout { 
+	property( property:rate, label:'Rate', min:1 ) 
+	separator( vertical:true )
+	property( property:unit, label:'Unit', options:['Sec','Min','Hour'] )
+	separator( vertical:true )
+	box( widget:'display' ) {
+		node( label:'Rate', content: { "$rate.value / $unit.value" }, constraints:'wmin 75' )
+	}
+}
+
+//Compact Layout
+compactLayout {
+	box( widget:'display' ) {
+		node( label:'Rate', content: { "$rate.value / $unit.value" } )
+	}
+}
+
+//Settings
+settings( label: "General" ) {
+	property( property: burstSize, label: 'Burst size' ) 
+}
+
+if( running ) schedule()</con:property><con:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="rate" type="java.lang.Long">3</con:property><con:property propagates="true" key="unit" type="java.lang.String">Sec</con:property><con:property propagates="true" key="burstSize" type="java.lang.Long">1</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Fixed Rate</con:property><con:property key="_digest">942809b49b7d53789d7f37adf41a60f5</con:property><con:property key="_id">com.eviware.FixedRate</con:property><con:property key="_classLoader">com.eviware.FixedRate</con:property><con:property key="gui.layoutX">1037</con:property><con:property key="gui.layoutY">188</con:property></con:attributes><con:addons/></con:component><con:connection outputTerminalId="21e30479-c1dc-44fb-bab4-24dde6119d66/runningTerminal" inputTerminalId="96a9102b-aae1-42cb-8442-80278eeab052/incomingTerminal"/><con:connection outputTerminalId="21e30479-c1dc-44fb-bab4-24dde6119d66/resultTerminal" inputTerminalId="042fc795-6c49-487c-b6ce-8dc0fbea7325/incomingTerminal"/><con:connection outputTerminalId="f124b461-d811-40e0-b988-ed3af921e617/triggerTerminal" inputTerminalId="21e30479-c1dc-44fb-bab4-24dde6119d66/triggerTerminal"/><con:connection outputTerminalId="21e30479-c1dc-44fb-bab4-24dde6119d66/samplerErrors" inputTerminalId="5c1c5ec5-b43d-4403-a86d-9ca80fc1e96d/stateTerminal"/><con:scene label="ScenarioPracticeAPI" id="5c1c5ec5-b43d-4403-a86d-9ca80fc1e96d" version="13"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">false</con:property></con:properties><con:attributes><con:property key="gui.layoutX">517</con:property><con:property key="gui.layoutY">614</con:property></con:attributes><con:addons/><con:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="SoapUI Runner 1" id="2ab3b3cb-4072-4d20-b9ea-809fff739566"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="concurrentSamples" type="java.lang.Long">100</con:property><con:property propagates="true" key="maxQueueSize" type="java.lang.Long">1000</con:property><con:property propagates="true" key="countDiscarded" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="_projectFileworkingCopy" type="java.io.File">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project0620.xml</con:property><con:property propagates="true" key="disabledTestSteps" type="java.lang.String">DataSource Loop=false,RequestDelete=true,Requestupdate=true</con:property><con:property propagates="true" key="settingsFile" type="java.io.File">C:\Users\Dev.Admin\soapui-settings.xml</con:property><con:property propagates="true" key="_projectPassword" xsi:nil="true" type="java.lang.String" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:property propagates="true" key="useProjectRelativePath" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="raiseError" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="outputTestCaseProperties" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="OutputLevel" type="java.lang.String">TestCase only</con:property><con:property propagates="true" key="closeConnectionsAfterRequest" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="disableSoapuiAssertions" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="forceShareDatasources" type="java.lang.Boolean">true</con:property><con:property propagates="false" key="projectFile" type="java.lang.String">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project0620.xml</con:property><con:property propagates="true" key="testSuite" type="java.lang.String">PracticeAPITestSuite</con:property><con:property propagates="true" key="testCase" type="java.lang.String">Practice TestCase</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">SoapUI Runner</con:property><con:property key="gui.layoutX">255</con:property><con:property key="gui.layoutY">183</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Fixed Load 1" id="d99c4ef4-361c-4029-98d6-737086a80cc2" category="generators"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String"><![CDATA[// 
+// Copyright 2013 SmartBear Software
+// 
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+// 
+// http://ec.europa.eu/idabc/eupl
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+// 
+
+/**
+ * Simulates a "classic" fixed load situation
+ * 
+ * @id com.eviware.FixedLoad
+ * @help http://www.loadui.org/Generators/fixed-load-component.html
+ * @name Fixed Load
+ * @category generators
+ * @nonBlocking true
+ */
+
+import com.eviware.loadui.api.component.categories.RunnerCategory
+
+import java.util.concurrent.TimeUnit
+
+sampleCount = createInput( 'Sample Count', 'Currently running feedback', 'Used to recieve the number of currently running requests from the triggered Runner.' ) {
+	it.name == "runningTerminal"
+}
+
+count = 0;
+
+future = null
+
+feedbackProviders = [:]
+sampleCount.connections.each { feedbackProviders[it.outputTerminal] = 0 }
+
+//Properties
+createProperty( 'load', Long, 10 ) { value ->
+	if( !doDelay && count < value ) {
+		trigger()
+		loadDisplay = count + 1
+	}
+}
+createProperty( 'interval', Long, 0 ) { value ->
+	doDelay = stateProperty.value && value > 0
+	schedule()
+}
+
+onReplace( stateProperty ) { value ->
+	doDelay = value && interval.value > 0
+	if( value ) schedule()
+	else future?.cancel( true )
+}
+
+doDelay = stateProperty.value && interval.value > 0
+
+loadDisplay = 0
+
+latestAction = 'NONE'
+
+schedule = {
+	future?.cancel( true )
+	if( doDelay ) future = scheduleAtFixedRate( { if( count < load.value ) trigger() }, interval.value, interval.value, TimeUnit.MILLISECONDS )
+	else if( load.value > 0 ) trigger()
+}
+
+onMessage = { outgoing, incoming, message ->
+	if( incoming == sampleCount && latestAction != 'STOP' ) {
+	
+		// use the sum of all connected runners' currently running requests
+		feedbackProviders[outgoing] = message[RunnerCategory.CURRENTLY_RUNNING_MESSAGE_PARAM]
+
+		def currentCount = feedbackProviders.values().sum()
+		count = currentCount
+		
+		if( currentCount < load.value && !doDelay ) {
+			trigger()
+			currentCount += feedbackProviders.size()
+		}
+		
+		loadDisplay = currentCount
+	}
+}
+
+onConnect = { outgoing, incoming ->
+	if( incoming == sampleCount )
+		feedbackProviders[outgoing] = 0
+
+	if( outgoing == triggerTerminal && interval.value == 0 )
+		trigger()
+}
+
+onDisconnect = { outgoing, incoming ->
+	if( incoming == sampleCount )
+		feedbackProviders.remove( outgoing )
+}
+
+onAction( 'START' ) {
+	schedule()
+	latestAction = 'START'
+	if( !doDelay && load.value > 0 ) trigger()
+}
+
+onAction( 'STOP' ) {
+	future?.cancel( true )
+	latestAction = 'STOP'
+}
+
+//Layout
+layout  { 
+	property( property:load, label:'Load', min:0 ) 
+	separator( vertical:true )
+	property( property:interval, label:'Min. Delay', min:0 ) 
+	separator( vertical:true )
+	box( widget:'display' ) {
+		node( label:'Load', content: { loadDisplay }, constraints:"w 60!" )
+		node( label:'Min. Delay', content: { "$interval.value ms" }, constraints:"w 60!" )
+	}
+}
+
+//Compact Layout
+compactLayout  {
+	box( widget:'display' ) {
+		node( label:'Load', content: { loadDisplay } )
+		node( label:'Min. Delay', content: { "$interval.value ms" } )
+	}
+}
+
+schedule()
+
+//Settings
+//settings( label: "Settings", layout: 'wrap 2' ) {
+//	box(layout:"growx, wrap 1") {
+//		property( property:load, label:'Load', min:0, constraints:"w 60!") 
+//		property( property:interval, label:'Interval', min:0, constraints:"w 60!" ) 
+//	}
+//} ]]></con:property><con:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="load" type="java.lang.Long">10</con:property><con:property propagates="true" key="interval" type="java.lang.Long">0</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Fixed Load</con:property><con:property key="_digest">e677173083513e00096bd381cd2c8f2d</con:property><con:property key="_id">com.eviware.FixedLoad</con:property><con:property key="_classLoader">com.eviware.FixedLoad</con:property><con:property key="gui.layoutX">1074</con:property><con:property key="gui.layoutY">117</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Delay 2" id="f5681a1b-3a33-47e3-8264-07da2297f461" category="flow"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">// 
+// Copyright 2013 SmartBear Software
+// 
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+// 
+// http://ec.europa.eu/idabc/eupl
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+// 
+
+/**
+ * Delays incoming messages for a period of time
+ * 
+ * @id com.eviware.Delay
+ * @help http://www.loadui.org/Flow-Control/delay-component.html
+ * @category flow
+ * @nonBlocking true
+ */
+ 
+import com.eviware.loadui.api.events.PropertyEvent
+import java.util.concurrent.atomic.AtomicLong
+import java.util.concurrent.TimeUnit
+import com.eviware.loadui.api.model.SceneItem
+
+final GAUSSIAN = 'Gaussian'
+final UNIFORM = 'Uniform'
+final EXPONENTIAL = 'Exponential'
+
+def random = new Random()
+def waitingCount = new AtomicLong()
+
+def displayNA = false
+long waitTime = 0
+
+createOutgoing( 'output' )
+output.label = 'Delayed messages'
+output.description = 'After being delayed, messages are outputted here.'
+
+incomingTerminal.label = 'Messages to delay'
+incomingTerminal.description = 'Recieved messages will be delayed before being outputted. Messages are processed independently in parallel (as opposed to being queued).'
+
+createProperty('delay', Long, 0)
+createProperty('selected', String, UNIFORM)
+createProperty('randomDelay', Integer, 0)
+
+total( 'waitingTotal' ) { waitingCount.get() }
+
+def workspace = null
+if(controller) {
+	workspace = canvas.project?.workspace
+}
+	
+fixDisplay = { displayNA = canvas instanceof SceneItem &amp;&amp; !workspace?.localMode }
+
+def workspaceListener = null
+if( workspace != null ) {
+	workspaceListener = addEventListener( workspace, PropertyEvent ) { event ->
+		fixDisplay()
+	}
+}
+fixDisplay()
+ 
+onMessage = { outgoing, incoming, message ->
+	if( incoming == incomingTerminal ) {
+		waitingCount.incrementAndGet()
+		def delayTime = delay.value 
+		if( selected.value == GAUSSIAN ) {
+			delayTime += ( random.nextGaussian() * ( randomDelay.value / 100 ) * delayTime * 0.3)
+		} else if( selected.value == UNIFORM ) {
+			delayTime += 2*( random.nextDouble() - 0.5 ) * delayTime * ( randomDelay.value / 100 )
+		} else if( selected.value == EXPONENTIAL ) {
+			delayTime *= -Math.log( 1 - random.nextDouble() )
+		}
+		
+		waitTime = delayTime as Long
+		message.put( 'actualDelay', waitTime )
+		schedule( {
+			send( output, message )
+			waitingCount.decrementAndGet()
+		}, waitTime, TimeUnit.MILLISECONDS )
+	}
+}
+ 
+onRelease = {
+	workspace?.removeEventListener( PropertyEvent, workspaceListener )
+}
+
+onAction( "COMPLETE" ) {
+	cancelTasks()
+	waitingCount.set( 0 )
+}
+
+onAction( "RESET" ) {
+	waitTime = 0
+	waitingCount.set( 0 )
+	cancelTasks()
+}
+
+layout { 
+	property( property:delay, label:"Delay\n(ms)", min:0, step:100, span:60000 ) 
+	separator( vertical:true )
+	node( widget:'selectorWidget', label:'Distribution', labels:[ UNIFORM, EXPONENTIAL, GAUSSIAN ],
+		images:[ 'linear_shape.png', 'poisson_shape.png', 'gauss_shape.png' ], selected: selected )
+	property( property: randomDelay, label:'Random\n(%)', min:0, max: 100 )
+	separator( vertical:true )
+	box( widget:'display' ) {
+		node( label:'Delay ', content: { displayNA ? 'n/a' : "$waitTime ms" }, constraints:'w 60!' )
+		node( label:'Waiting ', content: waitingTotal, constraints:'w 50!' )
+	}
+}
+ 
+compactLayout {
+	box( widget:'display' ) {
+		node( label:'Delay ', content: { displayNA ? 'n/a' : "$waitTime ms" }, constraints:'w 60!' )
+		node( label:'Waiting ', content: waitingTotal, constraints:'w 50!' )
+	}
+}</con:property><con:property propagates="true" key="delay" type="java.lang.Long">300</con:property><con:property propagates="true" key="selected" type="java.lang.String">Uniform</con:property><con:property propagates="true" key="randomDelay" type="java.lang.Integer">0</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Delay</con:property><con:property key="_digest">0f71bd03a38943c71f7cbffb4389518b</con:property><con:property key="_id">com.eviware.Delay</con:property><con:property key="_classLoader">com.eviware.Delay</con:property><con:property key="gui.layoutX">576</con:property><con:property key="gui.layoutY">551</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="DataSource 2" id="deeaa7c2-ead4-48fc-adc3-a2a8d22cbbfd" category="flow"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">/**
+ * Attaches values from a CSV-file to incoming Virtual Users. These values can
+ * then be used by subsequent components, such as a SoapUI Runner.
+ *
+ * @id com.eviware.DataSource
+ * @category flow
+ * @dependency com.xlson.groovycsv:groovycsv:1.0
+ */
+ 
+import com.xlson.groovycsv.CsvParser
+import java.util.ArrayList
+import com.google.common.collect.Lists
+
+
+
+createOutgoing( 'output' ) // Creates an outgoing connector called "output".
+csvIterator = null
+
+def inputFileText;
+
+def dataList;
+
+createProperty( 'separatorSymbol', String, ',' )
+
+parseCsv = {
+	if( inputFile.value )
+	{
+		dataList = Lists.newArrayList(CsvParser.parseCsv( inputFile.value.text, separator: separatorSymbol.value) as Iterator)
+		resetIterator()
+	}
+}
+
+resetIterator = {
+	csvIterator = dataList.iterator()
+}
+
+createProperty( 'inputFile', File ) {
+	parseCsv() // This will be called whenever the property's value is changed.
+}
+
+createProperty( 'shouldLoop', Boolean, false ) 
+
+// This is called whenever we get an incoming message.
+onMessage = { sendingConnector, receivingConnector, message ->
+
+	if(!csvIterator?.hasNext() &amp;&amp; shouldLoop.value)
+	{
+		resetIterator()
+	}
+		
+	if( csvIterator?.hasNext() )
+	{
+		line = csvIterator.next()
+		line.columns.each{ key, index ->
+			message[key] = line.values[index]
+		}
+	}
+
+	send( output, message )
+}
+
+onAction( 'RESET' ) {
+	parseCsv()
+}
+
+layout { 
+	property( property:inputFile, constraints: 'width 220', label:'Input file' )
+	property( property:shouldLoop, label:'Loop' )
+}
+
+settings (label: 'General') {
+	property( property: separatorSymbol, label:'Separator' )
+}
+
+parseCsv()
+</con:property><con:property propagates="true" key="separatorSymbol" type="java.lang.String">,</con:property><con:property propagates="true" key="inputFile" type="java.io.File">C:\Cynthia\soapUiSampleScripts\PracticeAPIData2.xls</con:property><con:property propagates="true" key="shouldLoop" type="java.lang.Boolean">true</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">DataSource</con:property><con:property key="_digest">ffdb8dfd167ff223a729ff338e6788c1</con:property><con:property key="_id">com.eviware.DataSource</con:property><con:property key="_classLoader">com.eviware.DataSource</con:property><con:property key="gui.layoutX">207</con:property><con:property key="gui.layoutY">18</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Interval 1" id="bc630c8d-d36f-4004-a192-0edb6556430c" category="scheduler"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String"><![CDATA[// 
+// Copyright 2013 SmartBear Software
+// 
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+// 
+// http://ec.europa.eu/idabc/eupl
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+// 
+
+/**
+ * Schedules the start and stop of connected components 
+ *
+ * @id com.eviware.Interval
+ * @help http://www.loadui.org/Schedulers/interval-component.html
+ * @category scheduler
+ * @nonBlocking true
+ */
+ 
+// Schedule the start and stop of a trigger component.
+// On Start starts timer and when StartAt reached send one START message to 
+// attached component. When Duration expires one STOP message is send to each 
+// attached component.
+// Repeat option repeats whole process if counter limit not set.
+// 
+// On Stop it sends a STOP message to attached components and stops timer.
+//
+// On Reset it just resets the timer and stops it.
+
+
+import com.eviware.loadui.api.model.CanvasItem
+import com.eviware.loadui.api.events.BaseEvent
+import com.eviware.loadui.api.events.PropertyEvent
+import com.eviware.loadui.util.layout.IntervalModel
+
+import java.util.concurrent.TimeUnit
+
+createProperty( 'startAt', Long, 0 )
+createProperty( 'duration', Long, 0 )
+createProperty( 'unit', String, 'Sec' )
+createProperty( 'mode', String, 'Single' )
+
+def timerCounter = counters[CanvasItem.TIMER_COUNTER]
+def canvas = getCanvas()
+def runCount = 0
+
+def startFuture = null
+def stopFuture = null
+
+def endFuture = null
+
+def interval = new IntervalModel()
+
+updateState = {
+	long limit = canvas.getLimit( CanvasItem.TIMER_COUNTER ) * 1000
+	
+	long mult = 1000
+	if( unit.value == 'Min' ) mult *= 60
+	else if( unit.value == 'Percent' && limit > 0 ) mult = limit / 100
+	
+	long startTime = startAt.value * mult
+	if( limit > 0 && startTime > limit ) {
+		startAt.value = limit / mult
+		return
+	}
+	interval.start = startTime
+	
+	long stopTime
+	if(duration.value == 0){
+		stopTime = (limit > 0) ? limit : IntervalModel.INFINITE
+	}
+	else{
+		stopTime = startTime + duration.value * mult
+	}
+	
+	if( limit > 0 && stopTime > limit ) {
+		duration.value = limit / mult - startAt.value
+		return
+	}
+	interval.stop = stopTime
+	interval.end = ( limit > stopTime && mode.value == 'Single' ) ? limit : stopTime
+	
+	long currentTime = timerCounter.get() * 1000 - runCount * stopTime
+	interval.position = currentTime
+	
+	if( running ) {
+		if( currentTime < stopTime ) {
+			stopFuture?.cancel( true )
+			stopFuture = schedule( { sendEnabled( false ) }, stopTime - currentTime, TimeUnit.MILLISECONDS )
+		}
+		if( currentTime < interval.end ) {
+			endFuture?.cancel( true )
+			endFuture = schedule( {
+				if( mode.value == 'Single' ) {
+					intervalModel.stop()
+					intervalModel.update()
+				} else {
+					runCount++
+					interval.position = 0
+					updateState()
+				}
+			}, interval.end - currentTime, TimeUnit.MILLISECONDS )
+		}
+		if( currentTime < startTime ) {
+			startFuture?.cancel( true )
+			startFuture = schedule( { sendEnabled( true ) }, startTime - currentTime, TimeUnit.MILLISECONDS )
+			sendEnabled( false )
+		} else if( currentTime < stopTime ) {
+			sendEnabled( true )
+		}
+	} else {
+		sendEnabled( false )
+	}
+	
+	interval.running = running
+	interval.notifyObservers()
+}
+
+onAction( "START" ) {
+	cancelAll()
+	updateState()
+}
+
+onAction( "STOP" ) {
+	cancelAll()
+	updateState()
+}
+
+onAction( "RESET" ) {
+	interval.position = 0
+	runCount = 0
+}
+
+addEventListener( PropertyEvent ) { event ->
+	if( event.property in [ startAt, duration, unit, mode ] ) {
+		if( !running ) updateState()
+	}
+}
+
+def limitsListener = addEventListener( canvas, BaseEvent ) { event ->
+	if( event.key == CanvasItem.LIMITS ) {
+		if( !running ) updateState()
+	}
+}
+
+onRelease = {
+	cancelAll()
+	canvas.removeEventListener(BaseEvent, limitsListener)
+}
+
+cancelAll = {
+	cancelTasks()
+	startFuture = null
+	stopFuture = null
+	endFuture = null
+}
+
+layout {
+    node( widget:'intervalWidget', model:interval, constraints:'span 6, gaptop 10' )
+    separator( vertical: false )
+    property( property: startAt, label:'Start At', min:0 )
+    property( property: duration, label: 'Duration', min:0 )
+    separator( vertical:true )
+    property( property:unit, label:'Unit', options:['Sec','Min','Percent'] )
+    separator( vertical:true )
+    property( property:mode, label:'Mode', options:['Single','Repeat'])
+}
+
+compactLayout {
+	box( widget:'display' ) {
+		node( label:'Start At', content: { "$startAt $unit" } )
+		node( label:'Duration', content: { "$duration $unit" } )
+	}
+}
+
+updateState()]]></con:property><con:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="startAt" type="java.lang.Long">0</con:property><con:property propagates="true" key="duration" type="java.lang.Long">3</con:property><con:property propagates="true" key="unit" type="java.lang.String">Min</con:property><con:property propagates="true" key="mode" type="java.lang.String">Repeat</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Interval</con:property><con:property key="_digest">b26c38c613b4a81a04e293b78d7afe0b</con:property><con:property key="_id">com.eviware.Interval</con:property><con:property key="_classLoader">com.eviware.Interval</con:property><con:property key="gui.layoutX">1035</con:property><con:property key="gui.layoutY">330</con:property></con:attributes><con:addons/></con:component><con:connection outputTerminalId="2ab3b3cb-4072-4d20-b9ea-809fff739566/runningTerminal" inputTerminalId="f5681a1b-3a33-47e3-8264-07da2297f461/incomingTerminal"/><con:connection outputTerminalId="deeaa7c2-ead4-48fc-adc3-a2a8d22cbbfd/output" inputTerminalId="2ab3b3cb-4072-4d20-b9ea-809fff739566/triggerTerminal"/><con:connection outputTerminalId="2ab3b3cb-4072-4d20-b9ea-809fff739566/resultTerminal" inputTerminalId="d99c4ef4-361c-4029-98d6-737086a80cc2/stateTerminal"/><con:connection outputTerminalId="d99c4ef4-361c-4029-98d6-737086a80cc2/triggerTerminal" inputTerminalId="bc630c8d-d36f-4004-a192-0edb6556430c/stateTerminal"/></con:scene><con:statistics><con:page title="Untitled Page 1"><con:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="Chart 1"><con:chart statisticHolder="824fdc88-5a50-4631-ad6a-fb3e076480bd"><con:attributes><con:property key="_CHART_segments">62:36:824fdc88-5a50-4631-ad6a-fb3e076480bd8:Requests5:TOTAL4:main68:36:824fdc88-5a50-4631-ad6a-fb3e076480bd8:Requests10:PER_SECOND4:main</con:property><con:property key="_CHART__SEGMENT_36:824fdc88-5a50-4631-ad6a-fb3e076480bd8:Requests10:PER_SECOND4:main_color">#66d466</con:property><con:property key="_CHART__SEGMENT_36:824fdc88-5a50-4631-ad6a-fb3e076480bd8:Requests5:TOTAL4:main_color">#66afdb</con:property></con:attributes></con:chart><con:attributes><con:property key="_CHARTGROUP_zoomLevel">SECONDS</con:property><con:property key="agentsExpanded">false</con:property></con:attributes></con:chartGroup><con:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="Chart 2"><con:chart statisticHolder="2ab3b3cb-4072-4d20-b9ea-809fff739566"><con:attributes><con:property key="_CHART_segments">84:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize7:STD_DEV4:main63:36:2ab3b3cb-4072-4d20-b9ea-809fff73956610:Throughput3:TPS4:main93:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_25TH4:main67:36:2ab3b3cb-4072-4d20-b9ea-809fff73956610:Time Taken7:AVERAGE4:main84:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize7:AVERAGE4:main93:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_90TH4:main83:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize6:MEDIAN4:main93:36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_75TH4:main</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_90TH4:main_color">#00b2d2</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_75TH4:main_color">#df51a5</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize6:MEDIAN4:main_color">#c69c6d</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize7:STD_DEV4:main_color">#fffb00</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize15:PERCENTILE_25TH4:main_color">#ff9533</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956627:RequestCreate: ResponseSize7:AVERAGE4:main_color">#ffffff</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956610:Time Taken7:AVERAGE4:main_color">#ff7a66</con:property><con:property key="_CHART__SEGMENT_36:2ab3b3cb-4072-4d20-b9ea-809fff73956610:Throughput3:TPS4:main_color">#ae7dd3</con:property></con:attributes></con:chart><con:chart statisticHolder="a1b35435-69f4-446d-b034-442a880cd012"><con:attributes><con:property key="_CHART_segments">46:10:TEST_EVENT16:AssertionFailure11:Assertion 1</con:property><con:property key="_CHART__SEGMENT_10:TEST_EVENT16:AssertionFailure11:Assertion 1_color">#66d466</con:property></con:attributes></con:chart><con:attributes><con:property key="_CHARTGROUP_zoomLevel">SECONDS</con:property><con:property key="agentsExpanded">false</con:property></con:attributes></con:chartGroup></con:page></con:statistics></con:loadui-project>

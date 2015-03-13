@@ -1,0 +1,564 @@
+Thu Jun 19 12:05:13 EST 2014:DEBUG:Connection closed
+Thu Jun 19 12:05:16 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:05:16 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:05:16 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:05:16 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:05:48 EST 2014:DEBUG:Connection closed
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:34 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 5434ms (466 bytes)
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:34 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 354ms (466 bytes)
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:35 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 15ms (466 bytes)
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:35 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:36 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 320ms (466 bytes)
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:36 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 47ms (466 bytes)
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 84ms (466 bytes)
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 16ms (466 bytes)
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:37 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 39ms (466 bytes)
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 17ms (466 bytes)
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 17ms (466 bytes)
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 30ms (466 bytes)
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 19ms (466 bytes)
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:38 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 55ms (466 bytes)
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 17ms (466 bytes)
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 31ms (466 bytes)
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:39 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 16ms (466 bytes)
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:39 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 16ms (466 bytes)
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:40 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:40 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 16ms (466 bytes)
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 34ms (466 bytes)
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:41 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 19ms (466 bytes)
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:41 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 41ms (466 bytes)
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 17ms (466 bytes)
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 18ms (466 bytes)
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 18ms (466 bytes)
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:46 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:47 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 28ms (466 bytes)
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:47 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 43ms (466 bytes)
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:47 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 71ms (466 bytes)
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 31ms (466 bytes)
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 22ms (466 bytes)
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 23ms (466 bytes)
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:48 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 16ms (466 bytes)
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 14ms (466 bytes)
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 23ms (466 bytes)
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 28ms (466 bytes)
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:49 EST 2014:DEBUG:Sending request: PUT /Practice/ HTTP/1.1
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Receiving response: HTTP/1.1 501 Not Implemented
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Sending request: POST /Practice/ HTTP/1.1
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Receiving response: HTTP/1.1 201 Created
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:06:50 EST 2014:INFO:Got response for [http://practiceserviceapi-dev.elasticbeanstalk.com.Practice:RequestCreate] in 31ms (466 bytes)
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Stale connection check
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Attempt 1 to execute request
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Sending request: GET /Practice/?PracticeCode=9104&Name=Accounting%20Comapny2396 HTTP/1.1
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Receiving response: HTTP/1.1 200 OK
+Thu Jun 19 12:06:50 EST 2014:DEBUG:Connection can be kept alive indefinitely
+Thu Jun 19 12:07:23 EST 2014:DEBUG:Connection closed
+Thu Jun 19 12:10:03 EST 2014:INFO:Saved project [REST Project PracticeAPI0619] to [C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project.xml - 13234 bytes
+Thu Jun 19 12:10:16 EST 2014:INFO:Saved project [REST Project PracticeAPI0619] to [C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project.xml - 13234 bytes
+Thu Jun 19 12:10:16 EST 2014:INFO:Saved workspace to [C:\Users\Dev.Admin\default-soapui-workspace.xml]

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:loadui-project label="PracticeAPILoadTest0620" id="824fdc88-5a50-4631-ad6a-fb3e076480bd" xmlns:con="http://eviware.com/loadui/config"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="ModelItem.saveReport" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="ModelItem.reportFolder" type="java.lang.String"/><con:property propagates="true" key="ModelItem.reportFormat" type="java.lang.String"/></con:properties><con:attributes/><con:addons/><con:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="SoapUI Runner 1" id="84f58784-184d-462b-a210-2816f8005052"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="concurrentSamples" type="java.lang.Long">100</con:property><con:property propagates="true" key="maxQueueSize" type="java.lang.Long">1000</con:property><con:property propagates="true" key="countDiscarded" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="_projectFileworkingCopy" type="java.io.File">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project.xml</con:property><con:property propagates="true" key="disabledTestSteps" type="java.lang.String"/><con:property propagates="true" key="settingsFile" type="java.io.File">C:\Users\Dev.Admin\soapui-settings.xml</con:property><con:property propagates="true" key="_projectPassword" xsi:nil="true" type="java.lang.String" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:property propagates="true" key="useProjectRelativePath" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="raiseError" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="outputTestCaseProperties" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="OutputLevel" type="java.lang.String">TestCase only</con:property><con:property propagates="true" key="closeConnectionsAfterRequest" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="disableSoapuiAssertions" type="java.lang.Boolean">false</con:property><con:property propagates="true" key="forceShareDatasources" type="java.lang.Boolean">true</con:property><con:property propagates="false" key="projectFile" type="java.lang.String">C:\Cynthia\soapUiSampleScripts\REST-Project-PracticeAPI0619-soapui-project.xml</con:property><con:property propagates="true" key="testSuite" type="java.lang.String">PracticeAPITestSuite</con:property><con:property propagates="true" key="testCase" type="java.lang.String">Practice TestCase</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">SoapUI Runner</con:property><con:property key="gui.layoutX">216</con:property><con:property key="gui.layoutY">355</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="Ramp Load 1" id="9acad0e9-10ed-4a37-bf49-4d819f2a0e10" category="generators"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String"><![CDATA[//
+// Copyright 2013 SmartBear Software
+//
+// Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent
+// versions of the EUPL (the "Licence");
+// You may not use this work except in compliance with the Licence.
+// You may obtain a copy of the Licence at:
+//
+// http://ec.europa.eu/idabc/eupl
+//
+// Unless required by applicable law or agreed to in writing, software distributed under the Licence is
+// distributed on an "AS IS" basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+// express or implied. See the Licence for the specific language governing permissions and limitations
+// under the Licence.
+//
+
+/**
+ * Ramps up, holds steady and then ramps down the "Classic" way.
+ *
+ * @id com.eviware.RampLoad
+ * @name Ramp Load
+ * @category generators
+ * @help http://loadui.org/Generators/ramp-load.html
+ * @nonBlocking true
+ */
+
+import java.util.concurrent.TimeUnit
+import com.eviware.loadui.api.component.categories.RunnerCategory
+
+sampleCount = createInput( 'Sample Count', 'Currently running feedback', 'Used to recieve the number of currently running requests from the triggered Runner.' ) {
+    it.name == "runningTerminal"
+}
+
+feedbackProviders = [:]
+sampleCount.connections.each { feedbackProviders[it.outputTerminal] = 0 }
+
+createProperty( 'rampLength', Long, 10 ) { calculateAcceleration() }
+createProperty( 'peakLength', Long, 10 )
+createProperty( 'peakLoad', Long, 1){ calculateAcceleration() }
+
+future = null
+cancellingFuture = null
+startTime = 0
+triggersSent = 0
+calculateAcceleration()
+currentlyRunning = 0
+peakLimit = 0
+hasPeaked = false;
+
+latestAction = 'NONE'
+
+onAction( 'START' ) {
+    latestAction = 'START'
+    calculateAcceleration()
+    startTime = currentTime()
+    scheduleNext( startTime )
+    triggersSent = 0
+}
+
+onAction( 'STOP' ) {
+    latestAction = 'STOP'
+    peakLimit = 0
+    hasPeaked = false
+    future?.cancel( true )
+    cancellingFuture?.cancel( true )
+    startTime = null
+}
+
+onMessage = { outgoing, incoming, message ->
+    if ( incoming == sampleCount && latestAction != 'STOP'){
+        feedbackProviders[outgoing] = message[RunnerCategory.CURRENTLY_RUNNING_MESSAGE_PARAM]
+
+        def count = feedbackProviders.values().sum()
+
+        if( count < peakLimit && peakLimit > 0){
+            trigger()
+            count += feedbackProviders.size()
+        }
+        currentlyRunning = count
+    }
+}
+
+onConnect = { outgoing, incoming ->
+
+    if( incoming == sampleCount )
+        feedbackProviders[outgoing] = 0
+
+    if( outgoing == triggerTerminal)
+        trigger()
+}
+
+onDisconnect = { outgoing, incoming ->
+    if( incoming == sampleCount){
+        feedbackProviders.remove( outgoing )
+    }
+}
+
+
+scheduleNext = { wakeTime ->
+    def t0 = getT0()
+
+    if( t0 >= rampLength.value && !hasPeaked) {
+
+        hasPeaked = true
+        peakLimit = peakLoad.value
+
+        def delay = 1000000/peakLoad.value
+
+        future = scheduleAtFixedRate( { trigger() }, delay, delay, TimeUnit.MICROSECONDS )
+        cancellingFuture = schedule( {
+            future?.cancel( true )
+            a = -a
+            scheduleNext( rampLength.value )
+        }, peakLength.value, TimeUnit.SECONDS )
+    }
+    else if( t0 >= 0 ) {
+
+        triggersSent = 0
+
+        peakLimit =  Math.floor( t0 * Math.abs( a ) )
+
+        while( triggersSent < ( peakLimit - currentlyRunning ) ) {
+            trigger()
+            triggersSent++
+        }
+
+        t1 =  Math.sqrt( 2/a + t0**2 );
+
+        future?.cancel( true )
+        def diff = Math.abs( t1 - getT0() )
+        if( !Double.isNaN( diff ) ) {
+            future = schedule( {
+                if(peakLimit >= 1){
+                    trigger()
+                }
+                scheduleNext( t1 )
+            }, ( diff*1000000) as long, TimeUnit.MICROSECONDS )
+        }else{
+            peakLimit = 0
+        }
+    }
+    if(t0 < 0){
+        peakLimit = 0
+    }
+}
+
+def getT0() {
+    if( !startTime ) return 0
+    relativeTime = currentTime() - startTime
+    if( relativeTime >= rampLength.value + peakLength.value )
+        return startTime + rampLength.value*2 + peakLength.value - currentTime()
+    if( relativeTime >= rampLength.value )
+        return rampLength.value
+    return relativeTime
+}
+
+layout {
+    property( property:rampLength, label:'Ramp Duration\n(sec)', min:1 )
+    property( property:peakLength, label:'Peak Duration\n(sec)', min:0 )
+    separator( vertical:true )
+    property( property:peakLoad, label:'Peak Load', min: 1)
+    separator( vertical:true )
+    box( widget:'display' ) {
+        node( label:'Load', content: { if( getT0() > 0 ) String.format( '%7.1f', Math.abs(a*getT0()) ) else 0 }, constraints:'w 60!' )
+        node( label:'Running', content: { currentlyRunning })
+    }
+}
+
+compactLayout {
+    box( widget:'display' ) {
+        node( label:'Load', content: { if( getT0() > 0 ) String.format( '%7.1f',Math.abs(a*getT0() ) ) else 0 }, constraints:'w 60!' )
+        node( label:'Running', content: { currentlyRunning })
+    }
+}
+
+def currentTime() {
+    System.currentTimeMillis() / 1000
+}
+
+def calculateAcceleration() {
+    if( rampLength.value > 0 ){
+        a = peakLoad.value / rampLength.value
+    }else{
+        a = peakLoad.value;
+    }
+
+}]]></con:property><con:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con:property><con:property propagates="true" key="rampLength" type="java.lang.Long">30</con:property><con:property propagates="true" key="peakLength" type="java.lang.Long">10</con:property><con:property propagates="true" key="peakLoad" type="java.lang.Long">10</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">Ramp Load</con:property><con:property key="_digest">32b91d05d5aeda26acf17c5009310d97</con:property><con:property key="_id">com.eviware.RampLoad</con:property><con:property key="_classLoader">com.eviware.RampLoad</con:property><con:property key="gui.layoutX">773</con:property><con:property key="gui.layoutY">161</con:property></con:attributes><con:addons/></con:component><con:component type="com.eviware.loadui.groovy.GroovyComponent" label="DataSource 1" id="9ac28ad8-a85f-4a13-9596-82a55c8836d9" category="flow"><con:properties><con:property propagates="true" key="ModelItem.description" type="java.lang.String"/><con:property propagates="true" key="_script" type="java.lang.String">/**
+ * Attaches values from a CSV-file to incoming Virtual Users. These values can
+ * then be used by subsequent components, such as a SoapUI Runner.
+ *
+ * @id com.eviware.DataSource
+ * @category flow
+ * @dependency com.xlson.groovycsv:groovycsv:1.0
+ */
+ 
+import com.xlson.groovycsv.CsvParser
+import java.util.ArrayList
+import com.google.common.collect.Lists
+
+
+
+createOutgoing( 'output' ) // Creates an outgoing connector called "output".
+csvIterator = null
+
+def inputFileText;
+
+def dataList;
+
+createProperty( 'separatorSymbol', String, ',' )
+
+parseCsv = {
+	if( inputFile.value )
+	{
+		dataList = Lists.newArrayList(CsvParser.parseCsv( inputFile.value.text, separator: separatorSymbol.value) as Iterator)
+		resetIterator()
+	}
+}
+
+resetIterator = {
+	csvIterator = dataList.iterator()
+}
+
+createProperty( 'inputFile', File ) {
+	parseCsv() // This will be called whenever the property's value is changed.
+}
+
+createProperty( 'shouldLoop', Boolean, false ) 
+
+// This is called whenever we get an incoming message.
+onMessage = { sendingConnector, receivingConnector, message ->
+
+	if(!csvIterator?.hasNext() &amp;&amp; shouldLoop.value)
+	{
+		resetIterator()
+	}
+		
+	if( csvIterator?.hasNext() )
+	{
+		line = csvIterator.next()
+		line.columns.each{ key, index ->
+			message[key] = line.values[index]
+		}
+	}
+
+	send( output, message )
+}
+
+onAction( 'RESET' ) {
+	parseCsv()
+}
+
+layout { 
+	property( property:inputFile, constraints: 'width 220', label:'Input file' )
+	property( property:shouldLoop, label:'Loop' )
+}
+
+settings (label: 'General') {
+	property( property: separatorSymbol, label:'Separator' )
+}
+
+parseCsv()
+</con:property><con:property propagates="true" key="separatorSymbol" type="java.lang.String">,</con:property><con:property propagates="true" key="inputFile" type="java.io.File">C:\Cynthia\soapUiSampleScripts\PracticeAPIData2.xls</con:property><con:property propagates="true" key="shouldLoop" type="java.lang.Boolean">true</con:property></con:properties><con:attributes><con:property key="com.eviware.loadui.api.model.ComponentItem@type">DataSource</con:property><con:property key="_digest">ffdb8dfd167ff223a729ff338e6788c1</con:property><con:property key="_id">com.eviware.DataSource</con:property><con:property key="_classLoader">com.eviware.DataSource</con:property><con:property key="gui.layoutX">166</con:property><con:property key="gui.layoutY">102</con:property></con:attributes><con:addons/></con:component><con:connection outputTerminalId="32540d1e-e8be-455c-930e-f3d983a5a766/triggerTerminal" inputTerminalId="d3566def-8ec0-4e18-a159-5df9ad3e625c/triggerTerminal"/><con:connection outputTerminalId="f78e7f4b-a97d-496e-b63f-0a2198c91620/output" inputTerminalId="d3566def-8ec0-4e18-a159-5df9ad3e625c/triggerTerminal"/><con:statistics><con:page title="Untitled Page 1"><con:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="Chart 1"><con:chart statisticHolder="d8138592-92ab-4634-b630-e0b5a508b310"><con:attributes><con:property key="_CHART_segments">68:36:d8138592-92ab-4634-b630-e0b5a508b3108:Requests10:PER_SECOND4:main</con:property><con:property key="_CHART__SEGMENT_36:d8138592-92ab-4634-b630-e0b5a508b3108:Requests10:PER_SECOND4:main_color">#df51a5</con:property><con:property key="_CHART__SEGMENT_36:d8138592-92ab-4634-b630-e0b5a508b3108:Requests10:PER_SECOND4:main_scale">2</con:property></con:attributes></con:chart><con:chart statisticHolder="d3566def-8ec0-4e18-a159-5df9ad3e625c"><con:attributes><con:property key="_CHART_segments">90:36:d3566def-8ec0-4e18-a159-5df9ad3e625c24:RequestCreate: TimeTaken15:PERCENTILE_90TH4:main93:36:d3566def-8ec0-4e18-a159-5df9ad3e625c27:RequestCreate: ResponseSize15:PERCENTILE_90TH4:main</con:property><con:property key="_CHART__SEGMENT_36:d3566def-8ec0-4e18-a159-5df9ad3e625c27:RequestCreate: ResponseSize15:PERCENTILE_90TH4:main_color">#c3e166</con:property><con:property key="_CHART__SEGMENT_36:d3566def-8ec0-4e18-a159-5df9ad3e625c24:RequestCreate: TimeTaken15:PERCENTILE_90TH4:main_color">#00b2d2</con:property></con:attributes></con:chart><con:attributes><con:property key="_CHARTGROUP_zoomLevel">SECONDS</con:property><con:property key="agentsExpanded">false</con:property></con:attributes></con:chartGroup></con:page></con:statistics></con:loadui-project>

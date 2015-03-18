@@ -1,3 +1,0 @@
-chromedriver_win32-2-9
-IEDriverServer_x64_2.30.2
-Firefox  31.0
